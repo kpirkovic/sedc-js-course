@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+nav {
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightcoral;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+}
+section {
+    padding: 1rem;
+    width: 70%;
+    background-color: lightsalmon;
+}
+aside {
+    padding: 1rem;
+    width: 30%;
+    background-color: lightseagreen;
+}
