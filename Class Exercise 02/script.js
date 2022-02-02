@@ -1,3 +1,18 @@
+//Reading List
+
+function addBook() {
+    let bookTitle = document.getElementById("book-title").value;
+    let bookAuthor = document.getElementById("book-author").value;
+    let haveRead = document.getElementById("question").value;
+
+    document.getElementById("book-list").innerHTML += 
+    "<tr>"
+    + "<td>" + bookTitle + "</td>"
+    + "<td>" + bookAuthor + "</td>"
+    + "<td>" + haveRead + "</td>" 
+    + "</tr>" 
+}
+
 let clicked = 0;
 
 function showSideBar() {
