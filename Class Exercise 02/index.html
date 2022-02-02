@@ -6,7 +6,7 @@
     </head>
     <body>
         <main>
-            <aside>
+            <aside class="side-bar">
                 <button>Close</button>
                 <nav>
                     <ul>
@@ -19,9 +19,12 @@
                 </nav>
             </aside>
 
-            <section>
+            <section class="main-section">
                 <button>Show</button>
-                <form action="" method="post">
+
+                <h2>My Reading List</h2>
+
+                <form action="" method="post" class="my-form">
                     <label for="book-title">Book Title</label>
                     <input type="book-title" name="book-title" id="book-title">
 
@@ -32,7 +35,10 @@
                         <option selected value="Yes">Yes</option>
                         <option value="No">No</option>
                     </select>
-                </form>
+
+                    <button>Add Book</button>                
+                
+                </form>  
             </section>
         </main>
     </body>
