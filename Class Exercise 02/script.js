@@ -11,6 +11,9 @@ function addBook() {
     + "<td>" + bookAuthor + "</td>"
     + "<td>" + haveRead + "</td>" 
     + "</tr>" 
+    
+    document.getElementById("book-title").value = "";
+    document.getElementById("book-author").value = "";
 }
 
 let clicked = 0;

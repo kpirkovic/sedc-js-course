@@ -51,12 +51,13 @@ button:hover{
 .my-form {
     display: flex;
     flex-direction: column;
-    margin: 2rem 0;
+    margin: 2rem 0 1rem 0;
 }
 .my-form input, .my-form select{
     height: 2rem;
     margin-bottom: 1rem;
 }
 .add-btn {
-    padding: .7rem;
+    margin-bottom: 1rem;
+    padding: .7rem 1.5rem;
 }
