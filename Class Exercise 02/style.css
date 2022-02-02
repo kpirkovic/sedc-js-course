@@ -55,3 +55,6 @@ button:hover{
     height: 2rem;
     margin-bottom: 1rem;
 }
+.add-btn {
+    padding: .7rem;
+}
