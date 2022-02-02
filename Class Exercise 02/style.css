@@ -62,30 +62,3 @@ button:hover{
     padding: .7rem 1.5rem;
     position: relative;
 }
-.add-btn::before {
-    content: 'Fill the fileds before prociding';
-    background-color: rgb(240, 65, 65);
-    position: absolute;
-    font-size: 12.5px;
-    border-radius: 5px;
-    top: 0%;
-    left: 115%;
-    width: 25ch;
-    padding: .5rem;
-    transition: opacity 300ms ease;
-    opacity: 1;
-}
-.add-btn::after {
-    content: '';
-    background-color: rgb(240, 65, 65);
-    position: absolute;
-    font-size: 12.5px;
-    top: 15%;
-    left: 110%;
-    width: 1px;
-    height: 1px;
-    padding: .5rem;
-    transform: rotate(45deg);
-    transition: opacity 300ms ease;
-    opacity: 1;
-}

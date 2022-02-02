@@ -5,15 +5,20 @@ function addBook() {
     let bookAuthor = document.getElementById("book-author").value;
     let haveRead = document.getElementById("question").value;
 
-    document.getElementById("book-list").innerHTML += 
-    "<tr>"
-    + "<td>" + bookTitle + "</td>"
-    + "<td>" + bookAuthor + "</td>"
-    + "<td>" + haveRead + "</td>" 
-    + "</tr>" 
-    
-    document.getElementById("book-title").value = "";
-    document.getElementById("book-author").value = "";
+    if(bookTitle === "" || bookAuthor === "") 
+    {
+       alert("Fill The Inputs")
+    } else {
+        document.getElementById("book-list").innerHTML += 
+        "<tr>"
+        + "<td>" + bookTitle + "</td>"
+        + "<td>" + bookAuthor + "</td>"
+        + "<td>" + haveRead + "</td>" 
+        + "</tr>" 
+        
+        document.getElementById("book-title").value = "";
+        document.getElementById("book-author").value = "";
+    }
 }
 
 let clicked = 0;
