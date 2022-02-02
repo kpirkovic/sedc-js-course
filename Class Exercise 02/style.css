@@ -51,8 +51,7 @@ button:hover{
 .my-form {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 .my-form input, .my-form select{
     height: 2rem;
