@@ -19,7 +19,7 @@ button:hover{
 }
 #side-bar {
     position: fixed;
-    background-color: darkcyan;
+    background-color: rgb(14, 155, 155);
     z-index: 1000;
     width: 0;
     padding: 0;
@@ -39,7 +39,6 @@ button:hover{
     margin-top: 1rem;
 }
 #main-section {
-    width: 25rem;
     height: 100vh;
     padding: 2rem;
     margin-left: 0;
@@ -51,14 +50,38 @@ button:hover{
 .my-form {
     display: flex;
     flex-direction: column;
+    width: 18rem;
     margin: 2rem 0 1rem 0;
 }
 .my-form input, .my-form select{
     height: 2rem;
+    padding-left: .5rem;
     margin-bottom: 1rem;
 }
 .add-btn {
     margin-bottom: 2rem;
     padding: .7rem 1.5rem;
     position: relative;
+}
+table {
+    width: 30rem;
+    border-collapse: collapse;
+}
+thead {
+    background-color: rgb(14, 155, 155);
+    color: white;
+    border-bottom: 2px solid white;
+}
+th {
+    font-weight: 600;
+}
+td, th {
+    height: 3.5rem;
+    text-align: left;
+    padding: .5rem 1rem;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+td {
+    background-color: rgb(205, 230, 225);
 }
