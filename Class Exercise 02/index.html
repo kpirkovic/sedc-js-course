@@ -23,7 +23,7 @@
                 <button id="show-hide-btn" onclick="showSideBar()">Show</button>
 
                 <h2>My Reading List</h2>
-
+                <button onclick="addBook()">Add Book</button>
                 <form action="" method="post" class="my-form">
                     <label for="book-title">Book Title</label>
                     <input type="book-title" name="book-title" id="book-title">
@@ -37,9 +37,22 @@
                         <option value="No">No</option>
                     </select>
 
-                    <button class="add-btn" >Add Book</button>                
+                                
                 
-                </form>  
+                </form>
+                
+                <table border="1" cellpadding="5" cellspacing="5">
+                    <thead>
+                        <tr>
+                            <th>Book Title</th>
+                            <th>Book Author</th>
+                            <th>Read / Not Read</th>
+                        </tr>
+                    </thead>
+                    <tbody id="book-list">
+
+                    </tbody>
+                </table>
             </section>
         </main>
         <script src="./script.js"></script>
