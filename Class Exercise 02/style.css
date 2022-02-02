@@ -35,6 +35,9 @@ button:hover{
     color: white;
     text-decoration: none;
 }
+#side-bar ul li {
+    margin-top: 1rem;
+}
 #main-section {
     width: 25rem;
     height: 100vh;
