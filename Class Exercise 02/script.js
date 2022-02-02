@@ -1,5 +1,5 @@
 function showSideBar() {
-    document.getElementById("side-bar").style.width = "10vw"
+    document.getElementById("side-bar").style.width = "12rem"
     document.getElementById("side-bar").style.padding = "1.5rem 2rem"
     document.getElementById("main-section").style.marginLeft = "12.5rem"
 }
