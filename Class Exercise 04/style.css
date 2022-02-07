@@ -84,3 +84,70 @@ body {
 .card p {
     line-height: 1.7;
 }
+#pop-up-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+#pop-up-modal form {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    background-color: #F2561D;
+    padding: 2rem;
+}
+#pop-up-modal form div{
+    display: flex;
+    flex-direction: column;
+}
+#pop-up-modal form > * {
+    margin-bottom: 1.2rem;
+}
+#pop-up-modal form h4 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+label {
+    margin-bottom: .3rem;
+    font-size: 1.2rem;
+}
+input {
+    height: 2.3rem;
+    padding: .5rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+}
+#message {
+    height: 10rem;
+    font-family: 'Poppins',sans-serif;
+    padding: .5rem;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+    border: none;
+}
+#send-btn {
+    padding: .5rem;
+    height: 2.8rem;
+    background-color: #111110;
+    font-size: 1.1rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#close-btn {
+    position: absolute;
+    top: 2.5%;
+    right: 2.5%
+    color: black;
+}
