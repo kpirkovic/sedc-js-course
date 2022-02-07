@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1 {
+    font-size: 3rem;
+}
+input , select{
+    padding: .4rem 1rem;
+}
+section > *{
+   margin-bottom: 1.5rem;
+}
