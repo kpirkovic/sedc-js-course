@@ -101,7 +101,7 @@ body {
 #pop-up-modal form {
     display: flex;
     flex-direction: column;
-    width: 35vw;
+    width: clamp(30rem, 50vw, 40rem);
     background-color: #F2561D;
     padding: 2rem;
     position: relative;
