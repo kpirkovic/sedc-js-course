@@ -104,6 +104,8 @@ body {
     width: 35vw;
     background-color: #F2561D;
     padding: 2rem;
+    position: relative;
+    z-index: 2;
 }
 #pop-up-modal form div{
     display: flex;
@@ -147,7 +149,18 @@ input {
 }
 #close-btn {
     position: absolute;
-    top: 2.5%;
-    right: 2.5%
+    top: 5%;
+    right: 5%;
+    font-weight: 600;
+    font-size: 1.4rem;
     color: black;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.close-modal-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
 }

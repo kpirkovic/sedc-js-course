@@ -6,30 +6,6 @@
     </head>
     <body>
         <main>
-            <div id="pop-up-modal">
-                <form action="">
-                    <button id="close-btn">X</button>
-
-                    <h4>Contact Us</h4>
-
-                    <div>
-                        <label for="name">Name</label>
-                        <input id="name" type="name" placeholder="Your Name Here" required>
-                    </div>
-
-                    <div>
-                        <label for="email">Email</label>
-                        <input id="email" type="email" placeholder="Your Email Here" required>
-                    </div>
-
-                    <div>
-                        <label for="message">Message</label>
-                        <textarea placeholder="Your Message" name="message" id="message" ></textarea>
-                    </div>
-
-                    <input id="send-btn" type="submit" value="Send">
-                </form>
-            </div>
             <section class="services">
                 <div class="container">
                     <div class="services-section">
@@ -37,7 +13,7 @@
                             <span >Our Services</span>
                             <h3 class="services-heading">Psychotherapy can help treat challenges and symptoms relating to mental health.</h3>
                             <div class="underline"></div>
-                            <button class="main-btn">Contact Us</button>
+                            <button onclick="openModal()" class="main-btn">Contact Us</button>
                         </div>
                         <div>
                             <p class="services-copy">
@@ -68,6 +44,32 @@
                     </div>
                 </div>
             </section>
+            <div id="pop-up-modal">
+                <form action="">
+                    <button onclick="closeModal()" id="close-btn">X</button>
+
+                    <h4>Contact Us</h4>
+
+                    <div>
+                        <label for="name">Name</label>
+                        <input id="name" type="name" placeholder="Your Name Here" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="Your Email Here" required>
+                    </div>
+
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea placeholder="Your Message" name="message" id="message" ></textarea>
+                    </div>
+
+                    <input id="send-btn" type="submit" value="Send">
+                </form>
+                <div  onclick="closeModal()" class="close-modal-bg"></div>
+            </div>
         </main>
+        <script src="./script.js"></script>
     </body>
 </html>
