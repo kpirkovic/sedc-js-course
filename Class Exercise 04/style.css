@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.services {
+    height: 100vh;
+    background-color: lightskyblue;
+    padding: 0 2rem;
+}
+.services-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+}
