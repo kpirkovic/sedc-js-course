@@ -54,6 +54,11 @@ body {
     margin-top: 1rem;
     letter-spacing: .1rem;
     cursor: pointer;
+    transition: all 200ms ease;
+}
+.main-btn:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(0 5px 10px rgba(14, 13, 13, 0.2));
 }
 .cards-section {
     padding-top: 3rem;
