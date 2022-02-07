@@ -1,7 +1,8 @@
 function changeBg() {
     let dropDownBg = document.getElementById("bg-color-picker").value;
 
-    if(dropDownBg == "white"){
+    document.body.className = dropDownBg;
+    /* if(dropDownBg == "white"){
         document.body.style.background = "white";
         document.body.style.color = "black";
     } else if (dropDownBg == "black") {
@@ -13,5 +14,5 @@ function changeBg() {
     } else if (dropDownBg == "orange") {
         document.body.style.background = "#ff9a49";
         document.body.style.color = "black";
-    }
+    } */
 }
