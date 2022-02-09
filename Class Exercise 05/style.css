@@ -6,4 +6,48 @@
 }
 body {
     font-family: 'Poppins',sans-serif;
+    background-color: #abc4ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.main-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #edf2fb;
+    max-width: 50rem;
+    padding: 3rem;
+}
+header {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+.my-input {
+    display: flex;
+    flex-direction: column;
+}
+.input-btn-wraper {
+    display: flex;
+    width: 100%;
+}
+.my-input label{
+    font-size: 1.5rem;
+}
+.my-input > * {
+    margin-bottom: .5rem;
+}
+.my-input input {
+    padding: 1rem .5rem;
+    height: 2.5rem;
+    width: 80%;
+    border: none;
+}
+#add-btn {
+    padding: .55rem;
+    border: none;
+    background-color: lightblue;
+    font-size: 1.1rem;
+    width: 20%;
 }
