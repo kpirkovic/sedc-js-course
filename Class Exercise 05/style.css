@@ -18,6 +18,7 @@ body {
     background-color: #edf2fb;
     max-width: 50rem;
     padding: 3rem;
+    border: 2px solid white;
 }
 header {
     font-size: 2.5rem;
@@ -31,18 +32,23 @@ header {
 .input-btn-wraper {
     display: flex;
     width: 100%;
+    margin-bottom: 2rem;
 }
-.my-input label{
-    font-size: 1.5rem;
+.input-wraper label{
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
 }
-.my-input > * {
-    margin-bottom: .5rem;
-}
-.my-input input {
+#goals-input {
     padding: 1rem .5rem;
     height: 2.5rem;
     width: 80%;
     border: none;
+    background-color: transparent;
+    border-bottom: 2px solid lightblue;
+}
+#goals-input:focus {
+    outline: none;
 }
 #add-btn {
     padding: .55rem;
@@ -50,4 +56,16 @@ header {
     background-color: lightblue;
     font-size: 1.1rem;
     width: 20%;
+    cursor: pointer;
+}
+#todo-wraper {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+#complete-btn {
+    border: none;
+    background-color: gray;
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-right: .3rem;
 }
