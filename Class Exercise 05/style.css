@@ -8,11 +8,9 @@ body {
     font-family: 'Poppins',sans-serif;
     background-color: #abc4ff;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 .main-section {
+    margin: 12.5rem auto;
     display: flex;
     flex-direction: column;
     background-color: #edf2fb;
@@ -34,13 +32,13 @@ header {
     width: 100%;
     margin-bottom: 2rem;
 }
-.input-wraper label{
+#input-wraper label{
     display: inline-block;
     font-size: 1.4rem;
     margin-bottom: 1.2rem;
 }
 #goals-input {
-    padding: 1rem .5rem;
+    padding: 1rem 0;
     height: 2.5rem;
     width: 80%;
     border: none;
@@ -59,13 +57,21 @@ header {
     cursor: pointer;
 }
 #todo-wraper {
+    display: flex;
+    align-items: center;
     padding: 1rem 0;
     font-size: 1.2rem;
+    
+}
+#todo-wraper span {
+    display: inline-block;
+    word-wrap: break-word;
 }
 #complete-btn {
     border: none;
     background-color: gray;
     width: 1.7rem;
     height: 1.7rem;
-    margin-right: .3rem;
+    margin-right: .5rem;
+    cursor: pointer;
 }

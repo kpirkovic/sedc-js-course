@@ -12,17 +12,18 @@
            <header> 
                <h1 class="main-title">Goals without a plan are just Dreams!</h1>
             </header>
-            <div class="input-wraper">
+            <div id="input-wraper">
                 <label for="">What are your plans for today?</label>
                 <div class="input-btn-wraper">
-                    <input id="goals-input" type="text" placeholder="Write your plans here...">
-                    <button id="add-btn">Add To Do</button>
+                    <input maxlength="50" id="goals-input" type="text" placeholder="Write your plans here...">
+                    <button onclick="addToDo()" id="add-btn">Add To Do</button>
                 </div>
             </div>
             <div id="todo-wraper">
-                <button id="complete-btn">X</button>
+                <button id="complete-btn"></button>
                 <span>Goal 01</span>
             </div>
         </section>
+        <script src="./script.js"></script>
     </body>
 </html>
