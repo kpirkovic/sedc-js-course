@@ -38,12 +38,13 @@ header {
     margin-bottom: 1.2rem;
 }
 #goals-input {
-    padding: 1rem 0;
+    padding: 1rem .5rem;
     height: 2.5rem;
     width: 80%;
     border: none;
     background-color: transparent;
     border-bottom: 2px solid lightblue;
+    font-size: 1.2rem;
 }
 #goals-input:focus {
     outline: none;
@@ -61,7 +62,6 @@ header {
     align-items: center;
     padding: 1rem 0;
     font-size: 1.2rem;
-    
 }
 #todo-wraper span {
     display: inline-block;
@@ -69,9 +69,11 @@ header {
 }
 #complete-btn {
     border: none;
-    background-color: gray;
+    background-color: rgb(227, 238, 241);
+    border: 2px solid rgb(23, 24, 24);
     width: 1.7rem;
     height: 1.7rem;
     margin-right: .5rem;
     cursor: pointer;
+    position: relative;
 }

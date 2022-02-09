@@ -13,3 +13,6 @@ function addToDo () {
         document.getElementById("goals-input").value = "";
     }
 }
+function removeToDo (){
+    
+}
