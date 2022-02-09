@@ -62,18 +62,21 @@ header {
     align-items: center;
     padding: 1rem 0;
     font-size: 1.2rem;
+    gap: .7rem;
 }
 #todo-wraper span {
-    display: inline-block;
-    word-wrap: break-word;
+    word-break: break-all;
 }
-#complete-btn {
-    border: none;
-    background-color: rgb(227, 238, 241);
-    border: 2px solid rgb(23, 24, 24);
-    width: 1.7rem;
-    height: 1.7rem;
-    margin-right: .5rem;
-    cursor: pointer;
-    position: relative;
+@media screen and (max-width: 800px) 
+{
+    .input-btn-wraper {
+        flex-direction: column;
+    }    
+    #goals-input {
+        width: 100%;
+    }
+    #add-btn {
+        margin-top: 1rem;
+        width: 100%;
+    }
 }

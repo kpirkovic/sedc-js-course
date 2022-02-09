@@ -6,7 +6,6 @@ function addToDo () {
     } else {
         document.getElementById("input-wraper").innerHTML += 
         "<div id='todo-wraper'>"
-        + "<button id='complete-btn'></button>" 
         + "<span>" + myGoals + "</span>" 
         + "</div>"
 
