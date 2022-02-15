@@ -19,3 +19,12 @@ function calculateArea(){
     printArea.textContent = "Area = " + area;
     document.getElementById("area").value = "";
 }
+
+function calculateCircleArea() {
+    const circleArea = document.getElementById("circle-radius").value;
+    const printCricleArea = document.getElementById("circle-area");
+    const circleAreaResult = 3.141 * circleArea * circleArea ;
+
+    printCricleArea.textContent = "Circle Area = " + circleAreaResult;
+    document.getElementById("circle-area").value = "";
+}
