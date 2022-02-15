@@ -1,5 +1,4 @@
-let meeters = 5;
-let feet = 3.28;
+let feet = 50;
 
-let result = meeters * feet;
-console.log(result);
+let result = feet * 0.3048;
+console.log(feet + " feet" + " is " + result + " meters");
