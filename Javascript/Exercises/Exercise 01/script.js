@@ -17,7 +17,8 @@ function calculateArea(){
     const area = width * height;
 
     printArea.textContent = "Area = " + area;
-    document.getElementById("area").value = "";
+    document.getElementById("width").value = " ";
+    document.getElementById("height").value = " ";
 }
 
 function calculateCircleArea() {
@@ -26,5 +27,5 @@ function calculateCircleArea() {
     const circleAreaResult = 3.141 * circleArea * circleArea ;
 
     printCricleArea.textContent = "Circle Area = " + circleAreaResult;
-    document.getElementById("circle-area").value = "";
+    document.getElementById("circle-radius").value = "";
 }
