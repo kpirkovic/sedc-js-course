@@ -90,3 +90,23 @@ let studentScore = 89;
 let grade = assingGrade(studentScore);
 
 console.log(`You have ${studentScore} points which means, your grade is ${grade}`);
+
+//Hello World
+
+function helloWorld(language) {
+
+    if(language == "en" || language == "En" || language == "EN") {
+        return 'Hello World';
+    } else if (language == "es" || language == "Es" || language == "ES") {
+        return 'Hola Mundo';
+    } else if (language == "de" || language == "De" || language == "DE") {
+        return 'Hallo Welt';
+    } else {
+        return 'invalid language';
+    }
+}
+
+let whichLang = "DE";
+let lang = helloWorld(whichLang);
+
+console.log(lang)
