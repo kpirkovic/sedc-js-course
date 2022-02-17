@@ -111,3 +111,39 @@ let convertedText = whichLang.toLowerCase();
 let lang = helloWorld(convertedText);
 
 console.log(lang)
+
+
+//Zodiac Signs
+
+function zodiacSigns(year) 
+{
+    let b = (year - 4) % 12;
+
+    if(b == 0){
+        return 'Rat';
+    } else if (b == 1) {
+        return 'Ox';
+    } else if (b == 2) {
+        return 'Tiger';
+    } else if (b == 3) {
+        return 'Rabbit';
+    } else if (b == 4) {
+        return 'Dragon';
+    } else if (b == 5) {
+        return 'Snake';
+    } else if (b == 6) {
+        return 'Horse';
+    } else if (b == 7) {
+        return 'Goat';
+    } else if (b == 8) {
+        return 'Monkey';
+    } else if (b == 9) {
+        return 'Rooster';
+    } else if (b == 10) {
+        return 'Dog';
+    } else if (b == 11) {
+        return 'Pig';
+    } else {
+        return 'Invalid';
+    }
+}
