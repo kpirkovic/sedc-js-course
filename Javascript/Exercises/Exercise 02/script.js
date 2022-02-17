@@ -1,4 +1,5 @@
 //Functions Exercise
+
 function celsiusToFahrenheit(temp) {
     let temperature = temp * 9 / 5 + 32;
     return temperature;
@@ -51,12 +52,16 @@ console.log(result);
 function greaterNumber(x, y) {
     if(x > y){
         return x; 
-    } else {
+    } else if (y > x){
         return y;
+    }  else if (y == x){
+        return 'they are equal';
+    } else {
+        return 'incorrect input'
     }
 }
 
-let num = [38, 25];
+let num = [25, 25];
 let results = greaterNumber(num[0], num[1]);
 
 console.log(`The greater number of ${num[0]} and ${num[1]} is ${results}`);
