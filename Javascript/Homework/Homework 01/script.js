@@ -47,3 +47,22 @@ function zodiacSignsSwitch(year)
 }
 
 console.log(zodiacSignsSwitch(1997));
+
+//Largest number from three
+
+function highestNumberOfThree(x,y,z) {
+    if(x > y){
+        if (x > z) {
+            return x;
+        } else {
+            return z;
+        }
+    } else if ( y > z){
+        return y;
+    } else {
+        return 'Invalid Inputs'
+    }
+}
+let num = ["test", "test", 50];
+let largestNum = highestNumberOfThree(num[0],num[1],num[2]);
+console.log(`Out of all three numbers ${num[0]}, ${num[1]} and ${num[2]} the largest is ${largestNum}!`);
