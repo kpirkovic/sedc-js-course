@@ -30,3 +30,33 @@ if (fridayCash >= 50) {
 } else {
     console.log(`Looks like you'll be watching TV`);
 }
+
+//Check greater number and return the highest
+
+function greaterNum(x, y) {
+    if(x > y){
+        return `The greater number of ${x} and ${y} is ${x}` 
+    } else {
+        return `The greater number of ${x} and ${y} is ${y}`
+    }
+}
+
+let result = greaterNum(35, 20);
+
+console.log(result);
+
+
+//Second Solution
+
+function greaterNumber(x, y) {
+    if(x > y){
+        return x; 
+    } else {
+        return y;
+    }
+}
+
+let num = [38, 25];
+let results = greaterNumber(num[0], num[1]);
+
+console.log(`The greater number of ${num[0]} and ${num[1]} is ${results}`);
