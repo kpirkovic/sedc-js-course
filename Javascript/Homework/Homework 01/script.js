@@ -46,23 +46,41 @@ function zodiacSignsSwitch(year)
         }
 }
 
-console.log(zodiacSignsSwitch(1997));
+console.log("Your Zodiac Sign is an " + zodiacSignsSwitch(1997));
 
 //Largest number from three
 
+//input some numbers right here
+let num = [80, 70, 50];
+
 function highestNumberOfThree(x,y,z) {
-    if(x > y){
-        if (x > z) {
-            return x;
-        } else {
-            return z;
-        }
-    } else if ( y > z){
+    if(x >= y && x >= z){
+      return x;
+    } else if ( y >= x && y >= z){
         return y;
+    }
+    else if ( z >= x && z >= y){
+      return z;
     } else {
         return 'Invalid Inputs'
     }
 }
-let num = ["test", "test", 50];
 let largestNum = highestNumberOfThree(num[0],num[1],num[2]);
 console.log(`Out of all three numbers ${num[0]}, ${num[1]} and ${num[2]} the largest is ${largestNum}!`);
+
+//Smallest number from three
+function smallestNumberOfThree(x,y,z) {
+  if(x <= y && x <= z){
+    return x;
+  } else if ( y <= x && y <= z){
+      return y;
+  }
+  else if ( z <= x && z <= y){
+    return z;
+  } else {
+      return 'Invalid Inputs'
+  }
+}
+
+let smallestNum = smallestNumberOfThree(num[0], num[1], num[2]);
+console.log(`Out of all three numbers ${num[0]}, ${num[1]} and ${num[2]} the smallest is ${smallestNum}!`);
