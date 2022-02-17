@@ -95,18 +95,19 @@ console.log(`You have ${studentScore} points which means, your grade is ${grade}
 
 function helloWorld(language) {
 
-    if(language == "en" || language == "En" || language == "EN") {
+    if(language == "en") {
         return 'Hello World';
-    } else if (language == "es" || language == "Es" || language == "ES") {
+    } else if (language == "es") {
         return 'Hola Mundo';
-    } else if (language == "de" || language == "De" || language == "DE") {
+    } else if (language == "de") {
         return 'Hallo Welt';
     } else {
         return 'invalid language';
     }
 }
 
-let whichLang = "DE";
-let lang = helloWorld(whichLang);
+let whichLang = "Es";
+let convertedText = whichLang.toLowerCase();
+let lang = helloWorld(convertedText);
 
 console.log(lang)
