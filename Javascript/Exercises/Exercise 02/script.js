@@ -17,7 +17,7 @@ let fahrenheitCalculator = fahrenheitToCelsius(fahrenheit);
 console.log(`NN°F ${fahrenheit} is ${fahrenheitCalculator} NN°C`);
 
 
-//Inputs Exercise
+//If statments Exercise
 
 let fridayCash = 10;
 
