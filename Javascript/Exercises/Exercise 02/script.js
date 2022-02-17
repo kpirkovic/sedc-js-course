@@ -36,9 +36,9 @@ if (fridayCash >= 50) {
 
 function greaterNum(x, y) {
     if(x > y){
-        return `The greater number of ${x} and ${y} is ${x}` 
+        return `The greater number of ${x} and ${y} is ${x}`;
     } else {
-        return `The greater number of ${x} and ${y} is ${y}`
+        return `The greater number of ${x} and ${y} is ${y}`;
     }
 }
 
@@ -57,7 +57,7 @@ function greaterNumber(x, y) {
     }  else if (y == x){
         return 'they are equal';
     } else {
-        return 'incorrect input'
+        return 'incorrect input';
     }
 }
 
@@ -65,3 +65,28 @@ let num = [25, 25];
 let results = greaterNumber(num[0], num[1]);
 
 console.log(`The greater number of ${num[0]} and ${num[1]} is ${results}`);
+
+//Grade Checker
+
+function assingGrade(score) {
+
+    if(score >= 90) {
+        return 'A and you passed the exam.';
+    } else if (score >= 85) {
+        return 'B and you passed the exam.';
+    } else if (score >= 75) {
+        return 'C and you passed the exam.';
+    } else if (score >= 65) {
+        return 'D and you passed the exam.';
+    } else if (score >= 50) {
+        return 'E and you passed the exam.';
+    } else {
+        return 'F and you faild the exam.';
+    }
+
+}
+
+let studentScore = 89;
+let grade = assingGrade(studentScore);
+
+console.log(`You have ${studentScore} points which means, your grade is ${grade}`);
