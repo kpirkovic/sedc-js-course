@@ -58,3 +58,21 @@ for(let i = 0; i < 11; i++){
     let result = i * 9;
     document.write(`Brojot ${i} * 9 = ${result} <br>`);
 }
+
+let array1 = [100,20,20,3,3];
+let array2 = [100,20,20,3,3];
+
+let sum1 = 0;
+let sum2 = 0;
+
+for(let i = 0; i < 5; i++) {
+    sum1 += array1[i];
+    sum2 += array2[i];
+}
+if(sum1 < sum2) {
+    document.write(sum2 + " is Bigger");
+} else if (sum1 > sum2){
+    document.write(sum1 + " is Bigger");
+} else {
+    document.write("They are equal");
+}
