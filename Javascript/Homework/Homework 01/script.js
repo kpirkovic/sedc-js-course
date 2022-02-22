@@ -51,7 +51,7 @@ console.log("Your Zodiac Sign is an " + zodiacSignsSwitch(1997));
 //Largest number from three
 
 //input some numbers right here
-let num = [80, 70, 50];
+let num = [73, 138, 150];
 
 function highestNumberOfThree(x,y,z) {
     if(x >= y && x >= z){
