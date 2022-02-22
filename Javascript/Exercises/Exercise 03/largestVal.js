@@ -23,10 +23,10 @@ while(i < number.length){
 
 console.log(`The largest number in the array is ${maxNumber}`);
 
-let days = [":", 2, 3, 4, 5, 6, 7];
+let days = [4, 2, 3, 4, 5, 6, 7];
 
 for(let i = 0; i < days.length; i++){
-    if((days.length-1) == i){
+    if(i % 2 == 0){
         console.log(days[i]);
     }else {
         console.log(days[i] + ", ");
@@ -42,7 +42,7 @@ for(let i = 0; i < myNumbersList.length; i++){
     }
 }
 
-document.write("<br>")
+document.write("<br>");
 
 for(let i = 1; i <= 20; i++){
     if(i % 2 == 0) {
@@ -50,4 +50,11 @@ for(let i = 1; i <= 20; i++){
     } else {
         document.write(`${i} Is Not Even <br>`);
     }
+}
+
+document.write("<br>");
+
+for(let i = 0; i < 11; i++){
+    let result = i * 9;
+    document.write(`Brojot ${i} * 9 = ${result} <br>`);
 }
