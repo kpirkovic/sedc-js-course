@@ -41,3 +41,13 @@ for(let i = 0; i < myNumbersList.length; i++){
         document.write(`${myNumbersList[i]} Is Not Even <br>`);
     }
 }
+
+document.write("<br>")
+
+for(let i = 1; i <= 20; i++){
+    if(i % 2 == 0) {
+        document.write(`${i} Is Even <br>`);
+    } else {
+        document.write(`${i} Is Not Even <br>`);
+    }
+}
