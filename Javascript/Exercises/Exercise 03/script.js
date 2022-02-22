@@ -12,3 +12,13 @@ console.log(cars);
 
 //Returns the numbers of elements in the array
 console.log(cars.length);
+
+//Add an elements to position 2 and shift the other elements
+cars.splice(2, 0, "Yugo");
+console.log(cars);
+
+//Add an elements to position 1 and shifts the first elements
+cars.splice(1, 0, "Yugo");
+let firstElement = cars.shift(0);
+cars.push(firstElement);
+console.log(cars);
