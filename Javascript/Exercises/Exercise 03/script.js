@@ -18,7 +18,7 @@ cars.splice(2, 0, "Yugo");
 console.log(cars);
 
 //Add an elements to position 1 and shifts the first element to the last position
-let bmw = cars[0];
+let bmw = cars[1];
 cars.push(bmw);
-cars.splice(0, 1, "Yugo");
+cars.splice(1, 1, "Yugo");
 console.log(cars);
