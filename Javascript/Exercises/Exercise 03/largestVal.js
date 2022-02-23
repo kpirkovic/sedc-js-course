@@ -59,8 +59,10 @@ for(let i = 0; i < 11; i++){
     document.write(`Brojot ${i} * 9 = ${result} <br>`);
 }
 
-let array1 = [100,20,20,3,3];
-let array2 = [100,20,20,3,3];
+document.write("<br>");
+
+let array1 = [300,20,20,15,3];
+let array2 = [500,20,25,3,3];
 
 let sum1 = 0;
 let sum2 = 0;

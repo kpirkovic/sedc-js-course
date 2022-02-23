@@ -1,0 +1,17 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+label {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+button {
+    padding-inline: 1rem;
+}
+#my-input {
+    padding-inline-start: .5rem;
+}
+#show-results {
+    font-size: .9rem;
+    padding: .35rem .5rem;
+}
