@@ -26,23 +26,23 @@ function findMySymbol (){
 
 //Bonus Exercise
 
-let userInputs;
+let userInputs = [];
 let evenSum = 0;
 let unevenSum = 0;
 let displayEven = document.getElementById('even-num');
 let displayUneven = document.getElementById('uneven-num');
 
 for(let i = 0; i < 10; i++){
-    userInputs = parseFloat(prompt(`Random number here (input ${i+1} of 10)`));
-    if(userInputs % 2 === 0){
-        evenSum += userInputs;     
-        displayEven.textContent += userInputs + " + ";
+    userInputs.push(parseFloat(prompt(`Random number here (input ${i+1} of 10)`)));
+    
+    if(userInputs[i] % 2 === 0){
+        evenSum += userInputs[i];     
+        displayEven.textContent += userInputs[i] + " + ";
     } else {
-        unevenSum += userInputs;
-        displayUneven.textContent += userInputs + " + ";
+        unevenSum += userInputs[i];
+        displayUneven.textContent += userInputs[i] + " + ";
     }
 }
-
 displayEven.textContent += " = " + evenSum;
 displayUneven.textContent += " = " + unevenSum;
 
