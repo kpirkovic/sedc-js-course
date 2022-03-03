@@ -13,22 +13,23 @@ const myInputs = [firstName, lastName, email, password];
 const myLabels = ['First Name:', 'Last Name:', 'Email:', 'Password:'];
 
 submit.addEventListener('click', () => {
-    let count = myInputs.length;
+    let count = 0;
 
     tableHead.innerHTML = '';
     tableBody.innerHTML = '';
 
     for(let list in myInputs){
-        if(myInputs[list].value == ''){
-            count--;
+        if(myInputs[list].value !== ''){
+            count++;
         }
-        if(count === myInputs.length){
+        if(myInputs.length === count){
+            for(let list in myInputs){
+                tableHead.innerHTML += `<th>${myLabels[list]}</th>`;
+                tableBody.innerHTML += `<td>${myInputs[list].value}</td>`;
 
-            tableHead.innerHTML += `<th>${myLabels[list]}</th>`;
-            tableBody.innerHTML += `<td>${myInputs[list].value}</td>`;
-
-            myInputs[list].value = '';
-            error.innerText = '';
+                myInputs[list].value = '';
+                error.innerText = '';
+            }
         } else {
             error.innerText = 'Fill all the inputs before submiting';
         }
