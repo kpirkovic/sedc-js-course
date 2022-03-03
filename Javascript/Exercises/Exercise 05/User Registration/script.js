@@ -12,5 +12,6 @@ submit.addEventListener('click', () => {
     console.log(firstName.value);
     for(let list in myInputs){
         myUL.innerHTML += `<li>${myInputs[list].value}</li>`;
+        myInputs[list].value = '';
     }
 });
