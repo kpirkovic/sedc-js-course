@@ -6,3 +6,4 @@ myBtn.addEventListener('click', ()=> {
     myParagraph.style.fontFamily = '"Poppins", sans-serif';
     myParagraph.style.color = 'orange';
 })
+
