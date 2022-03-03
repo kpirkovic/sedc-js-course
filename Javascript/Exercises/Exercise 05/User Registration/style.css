@@ -1,0 +1,51 @@
+body {
+    font-family: 'Poppins',sans-serif;
+}
+table {
+    width: 30rem;
+    border-collapse: collapse;
+}
+thead {
+    border-bottom: 2px solid white;
+}
+th {
+    font-weight: 600;
+    background-color: rgb(143, 173, 228);
+    white-space: nowrap;
+}
+td, th {
+    height: 3rem;
+    text-align: left;
+    padding: .5rem 1rem;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+td {
+    background-color: rgb(205, 212, 230);
+}
+input {
+    border: 1px solid black;
+    padding: .5rem .35rem;
+}
+.inputs {
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    width: 20rem;
+}
+button {
+    color: white;
+    background-color: lightslategray;
+    border: none;
+    padding: .7rem;
+    transition: background 200ms ease;
+}
+button:hover {
+    background-color: rgb(84, 122, 158);
+    cursor: pointer;
+}
+span {
+    color: rgb(253, 75, 75);
+    padding: .2rem;
+    text-align: center;
+}
