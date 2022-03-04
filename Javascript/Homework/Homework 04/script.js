@@ -26,23 +26,16 @@ function printTable(){
         //prints the give input values from Row
         for(let i = 0; i < numberOfRows; i++){
             tBody.innerHTML += `<tr></tr>`;
-        }
 
-        //finds all the <tr> in tBody
-        let td = tBody.querySelectorAll('tr');
+            let td = tBody.querySelectorAll('tr');
 
-        //find me the ling of the rt
-        let foundTr = td.length;
+            let numberOfColums = tColums.value;
 
-        //prints the values that it takes from the input
-        let numberOfColums = tColums.value;
-
-        for(let j = 0; j < foundTr; j++){
-            //print the colums from the input
-            for(let k = 0; k < numberOfColums; k++){
-                td[j].innerHTML += `<td>Row ${j + 1} x Col ${k + 1}</td>`;
+            for(let j = 0; j < numberOfColums; j++){
+                td[i].innerHTML += `<td>Row ${i + 1} x Col ${j + 1}</td>`;
             }
         }
+        
     } else {
         alert('Fill all the inputs before submiting');
     }
