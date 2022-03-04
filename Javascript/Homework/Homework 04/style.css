@@ -1,0 +1,48 @@
+body {
+    font-family: 'Poppins',sans-serif;
+}
+.wraper {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+table {
+    border-collapse: collapse;
+}
+thead {
+    border-bottom: 2px solid white;
+}
+th {
+    font-weight: 600;
+    background-color: rgb(143, 173, 228);
+    white-space: nowrap;
+}
+td, th {
+    height: 3rem;
+    text-align: left;
+    padding: .5rem 1rem;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+td {
+    background-color: rgb(205, 212, 230);
+}
+input {
+    border: 1px solid black;
+    padding: .5rem .35rem;
+}
+table {
+    margin-top: .5rem;
+}
+button {
+    border: none;
+    background-color: rgb(79, 114, 160);
+    color: white;
+    padding: .7rem 1rem;
+    margin-top: 1.25rem;
+    cursor: pointer;
+    transition: background 200ms ease;
+}
+button:hover {
+    background-color: rgb(98, 145, 206);
+}
