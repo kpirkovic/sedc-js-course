@@ -38,8 +38,7 @@ createBtn.addEventListener('click', () => {
     if(checkInputs().length > 0){
         printErrors(checkInputs());
     } else {
-        loginInfo.push(userName.value);
-        loginInfo.push(pass.value);
+        loginInfo.push(userName.value, pass.value);
         register.style.display = "none";
         loginForm.style.display = "block";
     }
