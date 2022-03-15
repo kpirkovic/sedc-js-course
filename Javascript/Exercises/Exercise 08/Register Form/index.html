@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register Form</title>
+    </head>
+    <style>
+        #registerForm form {
+            display: flex;
+            flex-direction: column;
+            width: 20rem;
+            gap: .3rem;
+        }
+        input {
+            padding: .3rem .2rem;
+        }
+        button {
+            background-color: lightslategrey;
+            border: none;
+            padding: .7rem;
+            margin-top: .5rem;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+    <body>
+        <section id="registerForm">
+            <h2>Register</h2>
+            <form onsubmit="event.preventDefault()">
+                <input type="text" id="name" placeholder="Full name">
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="pass" placeholder="password">
+                <input type="password" id="repass" placeholder="repeat password">
+                <button id="create-btn">Create account</button>
+            </form>
+            <ul id="result"></ul>
+        </section>
+        <section id="loginForm" style="display: none;">
+            <h2>Login</h2>
+            <form onsubmit="event.preventDefault()">
+                <input type="text" id="l-user" placeholder="username">
+                <input type="password" id="l-pass" placeholder="password">
+                <button id="login-btn">Login</button>
+            </form>
+            <p id="loginResult"></p>
+        </section>    
+        <script src="app.js"></script>
+    </body>
+</html>
