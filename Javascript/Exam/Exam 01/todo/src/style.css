@@ -25,7 +25,9 @@ input[type="text"] {
     border: 2px solid #555758;
     border-radius: 3px;
 }
-
+input[type="checkbox"] {
+    pointer-events: none;
+}
 .todo-task {
     display: flex;
 }
@@ -34,7 +36,7 @@ input[type="text"] {
     margin-left: 15px;
     width: 100px;
     background-color: #778da9;
-    border: none;
+    border: none; 
     border-radius: 3px;
     color: #fff;
 }
