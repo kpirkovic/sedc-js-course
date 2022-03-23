@@ -74,7 +74,6 @@ function printIngredients(){
     const weight = document.getElementById('qty-type');
 
     const table = document.querySelector(`.${recipeName.value.toLowerCase().replace(/\s+/g, "")}`);
-    console.log(table);
     const tBody = table.lastElementChild;
     const tr = document.createElement('tr');
     tBody.append(tr);
