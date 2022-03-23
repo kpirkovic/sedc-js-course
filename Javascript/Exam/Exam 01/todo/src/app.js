@@ -19,7 +19,7 @@ function addTask (tasks, printTasks, printTotal){
 
     //Count the tasks
     counter++;
-    total.innerText = counter;
+    printTotal.innerText = counter;
     
     //reset taskInput
     tasks.value = '';

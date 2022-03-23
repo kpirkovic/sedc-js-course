@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins',sans-serif;
+    padding: 50px;
+}
+h1{
+    margin-bottom: 25px;
+    font-size: 33px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 600px;
+    margin-inline: auto;
+}
+input, select{
+    margin: 5px 0;
+    border: 1px solid lightslategray;
+    padding: 10px 5px;
+}
+input:focus, select:focus{
+    outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    box-shadow: 0 0 0 30px rgb(237, 241, 245) inset !important;
+}
+label{
+    margin: 5px 0;
+}
+button{
+    padding: 12px 15px;
+    margin: 20px 0 10px 0;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+}
+h2 {
+    margin: 10px 0;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th{
+    background-color: rgb(173, 217, 238);
+    font-weight: 600;
+}
+td {
+    background-color: rgb(226, 235, 248);
+}
+#recipe-result {
+    margin-top: 25px;
+}
+#error{
+    color: crimson;
+    font-size: 14.5px;
+    text-align: center;
+}
+table {
+    margin-top: 25px;
+}
