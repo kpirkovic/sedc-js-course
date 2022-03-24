@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Slayer</title>
+    <link href="src/style.css" rel="stylesheet">
+    <!-- defered script that loads LAST -->
+    <script src="src/app.js" defer></script>
+</head>
+<body>
+    <header><h1>MONSTER SLAYER</h1></header>
+    <main>
+        <section class="container">
+            <h3>Monster Health Bar</h3>
+            <div class="healthbar">
+                <div id="monster-healthbar"></div>
+            </div>
+        </section>
+        <section class="container">
+            <h3>Player Health Bar</h3>
+            <div class="healthbar">
+                <div id="player-healthbar"></div>
+            </div>
+        </section>
+        <section id="controls" class="container">
+            <button id="attack-monster">Attack</button>
+            <button id="special-attack" disabled>Special Attack</button>
+            <button id="heal">Heal</button>
+            <button id="surrender">Surrender</button>           
+        </section>
+    </main>
+    <aside class="container">
+        <h3>Battle log</h3>
+        <ul id="log">
+            <!-- log the game moves -->
+        </ul>
+    </aside>
+    <section id="game-over" class="container">
+        <h3>Game Over</h3>
+    </section>
+</body>
+</html>
