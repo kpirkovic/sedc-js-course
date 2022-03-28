@@ -1,0 +1,19 @@
+#products{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+#products li {
+    flex-grow: 1;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px #3a3a3a;
+}
+.cheaper-product{
+    color: lightseagreen;
+}
+th, td{
+    text-align: left;
+    padding: 5px;
+    border: 1px solid gray;
+}
