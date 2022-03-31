@@ -18,7 +18,7 @@ function Store(name){
                 <h4>Name: ${item.name}</h4>
                 <div><img width='200px' src='${item.imageUrl}'</img></div>
                 <div>Price: ${item.price} denari</div>
-                <div id='Quantity'>Quantity: ${item.quanitity}</div>
+                <div id='Quantity'>Quantity: ${item.quantity}</div>
                 <div>Description: ${item.description}</div>
                 <div>Compare: <input type='checkbox' class='compare-chk'></div>
                 <div><button class='add-cart-btn'>Add to Cart</button></div>
@@ -77,6 +77,15 @@ function Store(name){
             return false;
         }
     }
+
+    this.calculateQuanitity = function(product){
+        product.quantity--
+        if(product.quantity <= 0){
+            return 0;
+        } else {
+            return product.quantity;
+        }
+    }
 }
 
 function Product(name, price, imageUrl, description, quantity){
@@ -104,11 +113,17 @@ const addCartBtn = document.getElementById('add-cart-btn');
 document.addEventListener('click', (e)=>{
     if(e.target.classList.contains('add-cart-btn')){
         const productIndex = parseInt(e.target.closest('li').getAttribute('data-index'))
-        
         const product = myStore.getProductByIndex(productIndex);
         
         if(product){
-            myStore.addToCart(product);
+            const productQuanitity = e.target.closest('li').querySelector('#Quantity');
+            const quantity = myStore.calculateQuanitity(product); 
+            productQuanitity.innerText = `Quantity: ${quantity}`
+            if(quantity <= 0){
+                productQuanitity.style.color = 'red';
+            } else {
+                myStore.addToCart(product);
+            }
         }
     }
 });

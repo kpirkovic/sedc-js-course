@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            section{
+                max-width: 1000px;
+                margin: 50px auto;
+            }
+            button {
+                padding: 5px 10px;
+            }
+            #dog-pictures {
+                margin-block-start: 20px;
+            }
+            #dog-pictures img{
+                width: 400px;
+                height: 400px;
+                object-fit: cover;
+                border-radius: 10px;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+            }
+        </style>
+        <title>Json Exercises</title>
+    </head>
+    <body>
+        <section>
+            <h1>Api Exercise</h1>
+        </section>
+        <section>
+            <h2><h2>Cat Facts</h2>
+            <button id="cat-facts-btn">Get the data from CATS API</button>
+            <ol id="cat-facts-list"></ol>
+        </section>
+        <section>
+            <h2>Dog Pictures</h2>
+            <button id="dog-pictures-btn">Show me a picture from a DOG</button>
+            <div id="dog-pictures"></div>
+        </section>
+        <script src="app.js"></script>
+    </body>
+</html>
